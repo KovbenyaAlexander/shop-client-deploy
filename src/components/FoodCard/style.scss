@@ -1,0 +1,103 @@
+.card {
+  background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Montserrat Alternates", sans-serif;
+  height: 400px;
+  width: 325px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.301);
+
+  &__img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__weight {
+    font-size: 12px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    margin: 10px auto;
+  }
+
+  &__description {
+    margin: 0 auto;
+    width: 240px;
+    text-align: justify;
+    font-size: 13px;
+    height: 50px;
+  }
+
+  &__addGoodsinCart {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    margin: 10px auto 10px auto;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  &__counterOfPurchase {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 50px;
+    height: 50px;
+    background: #79b382;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 2.5;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  button {
+    background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+    border-radius: 10px;
+    color: white;
+    height: 44px;
+    width: 137px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+      box-shadow: 0px 5px 10px rgba(114, 163, 121, 0.7);
+      transition: all 0.3s ease-in-out;
+      color: black;
+    }
+  }
+
+  .button__icon {
+    padding-left: 10px;
+  }
+
+  .btn-minus,
+  .btn-plus {
+    width: 60px;
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0px 3px 20px 10px rgba(114, 163, 121, 0.3);
+    -moz-box-shadow: 0px 3px 20px 10px rgba(114, 163, 121, 0.3);
+    box-shadow: 0px 3px 20px 10px rgba(114, 163, 121, 0.3);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+}

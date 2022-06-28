@@ -1,0 +1,19 @@
+.modal {
+  &__str {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__hr {
+    margin: 00;
+    height: 1px;
+    border: none;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.1516981792717087) 0%,
+      rgba(91, 91, 91, 1) 50%,
+      rgba(0, 0, 0, 0.1516981792717087) 100%
+    );
+  }
+}

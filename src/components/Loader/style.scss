@@ -1,0 +1,14 @@
+.loader-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  // background-color: gold;
+  z-index: 99999999999999999999999999999999999999999999 !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

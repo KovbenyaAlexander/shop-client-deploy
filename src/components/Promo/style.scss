@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Zing";
+  src: url("../../../public/fonts/Zing Rust Demo Base.ttf") format("truetype");
+}
+
+.promo {
+  width: 100%;
+  background: rgba(33, 31, 32, 1);
+  margin-top: 99px;
+
+  .promo-text {
+    width: 70%;
+    height: 484px;
+
+    background: rgb(27, 27, 27);
+    background: linear-gradient(
+      90deg,
+      #211f20 45%,
+      rgba(33, 31, 32, 0.9) 65%,
+      rgba(33, 31, 32, 0) 100%
+    );
+
+    p {
+      font-family: "Zing", "Open Sans";
+      font-style: italic;
+      font-size: 67px;
+      color: #fff;
+      transform: rotate(-8.37deg);
+      width: 600px;
+      text-align: center;
+      padding: 100px 0 0 20px;
+    }
+  }
+
+  .wrapper {
+    height: 484px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url("../../../public/promo-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    .promo-text {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 50px;
+        width: 90%;
+        padding: 0;
+      }
+    }
+  }
+}

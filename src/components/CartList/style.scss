@@ -1,0 +1,139 @@
+.cart-list {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.cart-list-item {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 117px 1fr 200px;
+  background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+
+  &__img {
+    width: 117px;
+    height: 86px;
+    border-radius: 10px;
+  }
+
+  &__order-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+  }
+
+  &__price {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 10px;
+    width: 100%;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #a6a7ab;
+    }
+  }
+
+  button {
+    background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+      box-shadow: 0px 5px 10px rgba(114, 163, 121, 0.7);
+      transition: all 0.2s ease-in-out;
+      color: black;
+    }
+
+    &:disabled {
+      background: grey;
+      color: black;
+    }
+
+    &:disabled:hover {
+      box-shadow: none;
+      cursor: auto;
+    }
+  }
+}
+
+.cart-list-item:last-child {
+  border-bottom: none;
+}
+
+.cart-list__empty-msg {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.884);
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .cart-list-item {
+    font-size: 12px;
+
+    &__description {
+      justify-content: start;
+    }
+
+    &__controls {
+      font-size: 16px;
+    }
+  }
+
+  h3 {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .cart-list-item {
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+
+    grid-template-areas:
+      "img description"
+      "img controls";
+
+    &__description {
+      grid-area: description;
+      p {
+        display: none;
+      }
+    }
+
+    &__controls {
+      grid-area: controls;
+    }
+
+    &__img {
+      grid-area: img;
+    }
+  }
+}
